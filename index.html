@@ -2,10 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Calendario Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="calendar-card">
         <div class="calendar-header">
             <button id="prevBtn">&lt;</button>
@@ -17,6 +19,18 @@
         </div>
         <div id="calendarDays" class="calendar-days"></div>
     </div>
+
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <h3 id="modalDateText">Nota</h3>
+            <textarea id="noteInput" placeholder="Escribe un recordatorio..."></textarea>
+            <div class="modal-buttons">
+                <button id="saveNote">Guardar</button>
+                <button id="closeModal" class="btn-secondary">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
